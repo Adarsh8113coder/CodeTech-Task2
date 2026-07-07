@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Portfolio </h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Hello, I'm Adarsh</h2>
+    <p>BTECH Student</p>
+
+    <a href="#contact" class="button">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <h4>
+        I am a B.Tech IT student passionate about Artificial Intelligence,Computer Networks and Programming.
+    </h4>
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="box">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">Python</div>
+<div class="card">Java</div>
+<div class="card">Computer Networks</div>
+<div class="card">DBMS</div>
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="box">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>Responsive Portfolio using HTML & CSS.</p>
+</div>
+
+<div class="project">
+<h3>Text Summarizer</h3>
+<p>Python NLP Mini Project.</p>
+</div>
+
+<div class="project">
+<h3>Railway Reservation UI</h3>
+<p>Front-end website using HTML & CSS.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button>Send</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Adarsh /p>
+
+</footer>
+
+</body>
+</html>
