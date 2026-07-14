@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    background-color:cadetblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main { flex: 1; }
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 50%;
+    border: 4px solid black;
+  }
+  .card {
+    border: none;
+    box-shadow: 0 4px 18px rgba(522,144,41,0.78);
+    border-radius: 14px;
+  }
+  footer {
+    background-color: #212529;
+    color: coral;
+  }
+</style>
+</head>
+<body>
+ 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Student Portal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<main class="container my-5">
+ 
+  <!-- Profile Card -->
+  <div class="row justify-content-center" id="home">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="card p-4 text-center">
+        <div class="d-flex justify-content-center mb-3">
+          <img src="Sushant.jpg.webp" width=120px">
+        </div>
+        <h4 class="card-title mb-1">Adarsh Thyadi</h4>
+        <p class="text-muted mb-3">B.Tech Student</p>
+        <div class="row text-start">
+          <div class="col-6 mb-2"><strong>Roll Number:</strong></div>
+          <div class="col-6 mb-2">A24126511122</div>
+ 
+          <div class="col-6 mb-2"><strong>Branch:</strong></div>
+          <div class="col-6 mb-2">Information Technology</div>
+ 
+          <div class="col-6 mb-2"><strong>Email ID:</strong></div>
+          <div class="col-6 mb-2 text-break">adarshthyadi.24.it@anits.edu.in</div>
+        </div>
+        <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#profileModal">
+          View Profile
+        </button>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Academic Details -->
+  <div class="row justify-content-center mt-5" id="about">
+    <div class="col-12 col-lg-9">
+      <h5 class="mb-3">Academic Details</h5>
+      <div class="table-responsive shadow-sm rounded">
+        <table class="table table-bordered table-hover align-middle mb-0 bg-white">
+          <thead class="table-primary">
+            <tr>
+              <th scope="col">Subject Name</th>
+              <th scope="col">Internal Marks</th>
+              <th scope="col">External Marks</th>
+              <th scope="col">Total Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Data Structures</td>
+              <td>18</td>
+              <td>72</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Database Management Systems</td>
+              <td>16</td>
+              <td>68</td>
+              <td>84</td>
+            </tr>
+            <tr>
+              <td>Operating Systems</td>
+              <td>19</td>
+              <td>70</td>
+              <td>89</td>
+            </tr>
+            <tr>
+              <td>Computer Networks</td>
+              <td>17</td>
+              <td>65</td>
+              <td>82</td>
+            </tr>
+            <tr class="table-secondary fw-bold">
+              <td>Total</td>
+              <td>70</td>
+              <td>275</td>
+              <td>345</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+ 
+</main>
+ 
+<!-- View Profile Modal -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Student Profile Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-start">
+        <p><strong>Name:</strong> Adarsh Thyadi</p>
+        <p><strong>Roll Number:</strong> A24126511122</p>
+        <p><strong>Branch:</strong> Information Technology</p>
+        <p><strong>Email:</strong> adarshthyadi.24.it@anits.edu.in</p>
+        <p class="mb-0"><strong>Total Marks:</strong> 345 / 400</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- Footer -->
+<footer class="text-center py-4 mt-5" id="contact">
+  <div class="container">
+    <p class="mb-1 fw-semibold">Anil Neerukonda Institute of Technology and Sciences</p>
+    <p class="mb-0 small text-secondary">&copy; 2026 Anil Neerukonda Institute of Technology and Sciences. All Rights Reserved.</p>
+  </div>
+</footer>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
