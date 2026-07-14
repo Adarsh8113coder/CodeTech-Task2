@@ -33,8 +33,6 @@
 </style>
 </head>
 <body>
- 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Student Portal</a>
@@ -52,8 +50,6 @@
 </nav>
  
 <main class="container my-5">
- 
-  <!-- Profile Card -->
   <div class="row justify-content-center" id="home">
     <div class="col-12 col-md-8 col-lg-6">
       <div class="card p-4 text-center">
@@ -78,8 +74,6 @@
       </div>
     </div>
   </div>
- 
-  <!-- Academic Details -->
   <div class="row justify-content-center mt-5" id="about">
     <div class="col-12 col-lg-9">
       <h5 class="mb-3">Academic Details</h5>
@@ -131,8 +125,6 @@
   </div>
  
 </main>
- 
-<!-- View Profile Modal -->
 <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -153,8 +145,6 @@
     </div>
   </div>
 </div>
- 
-<!-- Footer -->
 <footer class="text-center py-4 mt-5" id="contact">
   <div class="container">
     <p class="mb-1 fw-semibold">Anil Neerukonda Institute of Technology and Sciences</p>
