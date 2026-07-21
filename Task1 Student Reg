@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Student Profile Card</title>
+    <link rel="stylesheet" href="styles1.css"
+</head>
+<body>
+
+<div class="card" id="studentCard">
+
+    <img src="Student.jpg" width="260px" alt="Student Image"
+    <br>
+    <h2>Student Profile</h2>
+    <p><b>Name:</b> Adarsh</p>
+    <p><b>Roll No:</b> A24126511122</p>
+    <p><b>Branch:</b> INFORMATION TECHNOLOGY</p>
+    <p><b>Email:</b> adarshthyadi.24.it@anits.edu.in</p>
+
+    <button onclick="showDetails()">Display Details</button>
+
+    <p id="message"></p>
+
+</div>
+
+<script>
+
+function showDetails()
+{
+    document.getElementById("message").innerHTML =
+    "Welcome Adarsh in Programming World!";
+
+    document.getElementById("studentCard").style.backgroundColor = "orange";
+}
+
+</script>
+
+</body>
+</html>
