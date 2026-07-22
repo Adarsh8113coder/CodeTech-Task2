@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Elements </title>
+</head>
+<body>
+
+    <h1>HTML </h1>
+
+
+    <h2>Link</h2>
+    <a href="https://www.google.com" target="_blank"> Google</a>
+
+    <hr>
+    <h2>Image</h2>
+    <img src="https://via.placeholder.com/200"
+         alt="Sample Image" width="200">
+
+    <hr>
+
+    <h2>List</h2>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ul>
+
+    <hr>
+    <h2>Student Table</h2>
+
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Lokesh</td>
+            <td>B.Tech</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Rahul</td>
+            <td>BCA</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Registration Form</h2>
+
+    <form>
+        Name:
+        <input type="text" name="name"><br><br>
+
+        Email:
+        <input type="email" name="email"><br><br>
+
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        Course:
+        <select>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+    <h2>Iframe</h2>
+
+    <iframe src="https://example.com"
+            width="400" height="200">
+    </iframe>
+
+    <hr>
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <hr>
+    <h2>Video</h2>
+
+    <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+</body>
+</html>
