@@ -1,0 +1,80 @@
+import React, { useEffect, useState } from "react";
+
+function App() {
+
+  const [users, setUsers] = useState([]);
+  const [search, setSearch] = useState("");
+  const [selectedUsers, setSelectedUsers] = useState([]);
+
+  // Fetch users from API
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((data) => setUsers(data));
+  }, []);
+
+  // Select or deselect user
+  const toggleUser = (id) => {
+    if (selectedUsers.includes(id)) {
+      setSelectedUsers(selectedUsers.filter((userId) => userId !== id));
+    } else {
+      setSelectedUsers([...selectedUsers, id]);
+    }
+  };
+
+  // Search filter
+  const filteredUsers = users.filter((user) =>
+    user.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+
+      <h1>Week-5 React Lab</h1>
+
+      <h2>User List from API</h2>
+
+      <input
+        type="text"
+        placeholder="Search User"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        style={{
+          padding: "8px",
+          width: "300px",
+          marginBottom: "20px"
+        }}
+      />
+
+      <h3>Selected Users: {selectedUsers.length}</h3>
+
+      {filteredUsers.map((user) => (
+        <div
+          key={user.id}
+          style={{
+            border: "1px solid gray",
+            padding: "10px",
+            marginBottom: "10px",
+            borderRadius: "5px"
+          }}
+        >
+          <h3>{user.name}</h3>
+
+          <p>Email: {user.email}</p>
+
+          <p>City: {user.address.city}</p>
+
+          <button onClick={() => toggleUser(user.id)}>
+            {selectedUsers.includes(user.id)
+              ? "Deselect"
+              : "Select"}
+          </button>
+
+        </div>
+      ))}
+
+    </div>
+  );
+}
+
+export default App;
